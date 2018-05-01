@@ -1,22 +1,26 @@
 # Autobox
 
+## Dependencies
+
+### NVIDIA Jetson TX2
+
+### ZED
+
+- [ZED SDK 2.4 TX2](https://www.stereolabs.com/developers/release/2.4/)
+- [ZED OpenCV Github](https://github.com/stereolabs/zed-opencv)
+
+### OpenCV
+
+- OpenCV4Tegra should be pre-installed from the NVIDIA Jetson TX2 Developer Kit
+
+### Cmake
+
+- [Cmake 3.11](https://cmake.org/download/)
+
 ## Build the program
-
-These build instructions are from Streolabs OpenCV Interface README.MD.
-
-#### Build for Windows
-
-- Create a "build" folder in the source folder
-- Open cmake-gui and select the source and build folders
-- Generate the Visual Studio `Win64` solution
-- Open the resulting solution and change configuration to `Release`
-- Build solution
-
-#### Build for Linux
 
 Open a terminal in the sample directory and execute the following command:
 
-    mkdir build
     cd build
     cmake ..
     make
@@ -26,9 +30,15 @@ Open a terminal in the sample directory and execute the following command:
 - Navigate to the build directory and launch the executable file
 - Or open a terminal in the build directory and run the sample :
 
-        ./ZED\ with\ OpenCV [path to SVO file]
+        ./ZED_with_OpenCV
 
 You can optionally provide an SVO file path (recorded stereo video of the ZED)
+
+        ./ZED_with_OpenCV [path to SVO file]
+        
+### Features
+
+- Click on depth window to receive the distance of the clicked location.
 
 ### Keyboard shortcuts
 
@@ -36,4 +46,5 @@ This table lists keyboard shortcuts that you can use in the sample application.
 
 Parameter             | Description                   |   Hotkey
 ---------------------|------------------------------------|-------------------------------------------------
+Save         | Save depth and normal image.      | 's'
 Exit         | Quit the application.             | 'q'
