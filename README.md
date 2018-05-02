@@ -32,7 +32,7 @@ Open a terminal in the sample directory and execute the following command:
 
         ./ZED_with_OpenCV
 
-You can optionally provide an SVO file path (recorded stereo video of the ZED)
+- You can optionally provide an SVO file path (recorded stereo video of the ZED)
 
         ./ZED_with_OpenCV [path to SVO file]
         
